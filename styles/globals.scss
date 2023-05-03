@@ -1,0 +1,38 @@
+@import "~bootstrap/scss/bootstrap";
+@import "home.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "certificates.scss";
+@import "divisions.scss";
+@import "about.scss";
+@import "variable.scss";
+@import "crown-essentials.scss";
+@import "product-modal.scss";
+
+// swiper css
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+@import "swiper/css/scrollbar";
+
+$primary-color: #59c0e9;
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+h4 {
+  font-family: "Montserrat", sans-serif;
+}
+h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}

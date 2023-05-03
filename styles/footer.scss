@@ -1,0 +1,26 @@
+.footer-div-wrapper {
+  background-image: url(../public/images/footer-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-color: #59c0e9;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+.footer-container {
+    text-align: left;
+  h3 {
+    font-size: 20px;
+    padding-top: 30px;
+    text-align: left;
+  }
+  ul li {
+    list-style-type: none;
+  }
+  a {
+    display: block;
+    cursor: pointer;
+  }
+}

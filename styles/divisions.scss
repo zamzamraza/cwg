@@ -1,0 +1,13 @@
+.our-divisions {
+   background-image: url(../public/images/our-divisions.jpg);
+   height: 400px;
+   background-position: center;
+   background-size: cover;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+   .our-divisions {
+      height: 200px;
+   }
+}

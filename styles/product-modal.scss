@@ -1,0 +1,9 @@
+.moddal-content {
+   padding-top: 30px;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 500px) {
+    .moddal-content {
+          padding-top: 0px;
+    }
+  }

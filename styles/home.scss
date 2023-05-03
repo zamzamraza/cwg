@@ -1,0 +1,87 @@
+// fixed image section
+.fixed-image-container {
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../public/images/kuwait-bg.png");
+  background-attachment: fixed;
+
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// our products category
+.our-products {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.products-category {
+  display: flex;
+  justify-content: center;
+}
+
+.box img {
+  height: 200px;
+  width: auto;
+}
+
+.border {
+  border: 1px solid black;
+  margin: 20px;
+  h5 {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+}
+
+// product market
+.product-market {
+  margin-bottom: 70px;
+  .card {
+    margin: 0;
+    padding: 0;
+  }
+}
+.product-market-heading {
+  text-align: center;
+  padding: 50px;
+}
+
+// product slider
+.home-product-slider {
+  background-position: center;
+  background-size: cover;
+  background-image: url("../public/images/aloe-bg.png");
+  background-attachment: fixed;
+  .container-product-heading {
+    h2 {
+      text-align: center;
+      padding: 30px;
+    }
+  }
+}
+
+// our brand
+.our-brands {
+  width: 70%;
+  margin: auto;
+  .our-heading {
+    h2 {
+      font-size: 45px;
+      // padding: 10px;
+    }
+  }
+  .our-brand-content {
+    background-color: #fcbf49;
+    padding-bottom: 10px;
+    p{
+     padding: 15px;
+    }
+  }
+}

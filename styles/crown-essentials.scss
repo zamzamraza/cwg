@@ -1,0 +1,162 @@
+.c-e-i {
+  img {
+    height: 500px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 150px) and (max-width: 550px) {
+  .c-e-i {
+    img {
+      height: 150px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 990px) {
+  .c-e-i {
+    img {
+      height: 250px;
+      width: 100%;
+    }
+  }
+}
+
+//   sec-1
+.sec-1 {
+  background-image: url(../public/images/crown-bg-1.jpg);
+  background-size: cover;
+}
+.content {
+  h3 {
+    font-size: 30px;
+    color: #666666;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+.inner-container {
+  padding: 50px;
+}
+.content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.checkmarks {
+  color: #477b1b;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  p {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 150px) and (max-width: 550px) {
+  .sec-1 {
+    background-image: none;
+  }
+}
+
+// sec 2
+.sec-2 {
+  background: aliceblue;
+  text-align: center;
+}
+.sec-2-container {
+  text-align: center;
+}
+.rowww {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.content-container img {
+  width: 70%;
+}
+.content-container p {
+  padding-top: 30px;
+  //   padding-bottom: 10px;
+}
+@media only screen and (min-width: 150px) and (max-width: 550px) {
+  .content-container img {
+    width: 80%;
+  }
+}
+
+// sec-3
+.sec-3 {
+  background-image: url(../public/images/606b2517a3.jpg);
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // opacity: 16.4;
+}
+.about-essentials {
+  padding-top: 100px;
+  color: white;
+}
+
+// sec 4
+.sec-4 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  h2 {
+    padding: 10px;
+    font-size: 35px;
+  }
+  .sec-4-container {
+    display: flex;
+    justify-content: center;
+  }
+  .sec-4-content {
+    width: 500px;
+    .sec-4-content img {
+      box-sizing: border-box;
+      transition-duration: 1s;
+      transition-delay: 0s;
+      transition-property: all;
+    }
+    .sec-4-content img:hover {
+    }
+  }
+  .sec-4-content-wrapper {
+    background: #ebebeb;
+    padding: 30px;
+    h3 {
+      color: #666666;
+    }
+  }
+}
+
+// sec 5
+
+.sec-5 {
+  background-image: url(../public/images/bgfarm.jpg);
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
+  .container-fluid {
+  }
+  .sec-5-row {
+    display: flex;
+    justify-content: space-around;
+  }
+  .sec-5-content {
+    display: flex;
+    background-color: white;
+    margin-top: 90px;
+    margin-bottom: 120px;
+    margin-top: 120px;
+    padding: 40px 25px 20px 25px;
+  }
+  .sec-5-img-container {
+  }
+  .sec-5-text-container {
+    padding-left: 15px;
+    h3 {
+      font-size: 26px;
+      line-height: 22px;
+      font-weight: 700;
+    }
+    p {
+      padding-top: 10px;
+    }
+  }
+}
