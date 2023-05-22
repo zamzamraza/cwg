@@ -4,60 +4,14 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Modal from "react-bootstrap/Modal";
 import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+// import required modules
+import { EffectFlip, Pagination, Navigation } from "swiper";
+import { SKIN_CARE_PRODUCT } from "@/utils/constant";
 
 const SkinCare = () => {
-  const data = [
-    {
-      productTitle: "This is product Title 1",
-      productImage: "/images/sample-product.png",
-      productText: "This is Product Text 1",
-      modalTitle: "This is modal Title 1",
-      modalText: "This is modal text 1",
-      modalImages: [
-        { src: "/images/product-image1.jpg", id: 1 },
-        { src: "/images/sample-product.png", id: 2 }
-      ],
-      modalQuantity: "100-gram"
-    },
-    {
-      productTitle: "This is product Title 2",
-      productImage: "/images/sample-product.png",
-      productText: "This is Product Text 2",
-      modalTitle: "This is modal Title 2",
-      modalText: "This is modal text 2",
-      modalImages: [
-        { src: "/images/product-image1.jpg", id: 1 },
-        { src: "/images/sample-product.png", id: 2 }
-      ],
-      modalQuantity: "100-gram"
-    },
-    {
-      productTitle: "This is product Title 3",
-      productImage: "/images/sample-product.png",
-      productText: "This is Product Text 3",
-      modalTitle: "This is modal Title 3",
-      modalText: "This is modal text 3",
-      modalImages: [
-        { src: "/images/product-image1.jpg", id: 1 },
-        { src: "/images/sample-product.png", id: 2 }
-      ],
-      modalQuantity: "100-gram"
-    },
-    {
-      productTitle: "This is product Title 4",
-      productImage: "/images/sample-product.png",
-      productText: "This is Product Text",
-      modalTitle: "This is modal Title 4",
-      modalText: "This is modal text 4",
-      modalImages: [
-        { src: "/images/product-image1.jpg", id: 1 },
-        { src: "/images/sample-product.png", id: 2 }
-      ],
-      modalQuantity: "100-gram"
-    }
-  ];
-  const [show, setShow] = useState(false);
 
+  const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = (value) => {
     setModalData(value);
@@ -69,32 +23,30 @@ const SkinCare = () => {
   const [modalImages, setModalImages] = useState([]);
   return (
     <>
-      <Container>
-        <h1>Skin Care Products</h1>
-        <Row>
-          {data &&
-            data.map((value, index) => {
-              return (
-                <>
-                  <Col>
-                    <Card style={{ width: "18rem" }} key={`card-${index}`}>
-                      <Card.Img variant="top" src={value.productImage} />
-                      <Card.Body>
-                        <Card.Text>{value.productTitle}</Card.Text>
-                        <Button
-                          variant="primary"
-                          onClick={() => handleShow(value)}
-                        >
-                          Launch demo modal
-                        </Button>
-                      </Card.Body>
-                    </Card>
-                  </Col>
-                </>
-              );
-            })}
-        </Row>
-      </Container>
+      <section className='product-container'>
+        <Container>
+          <h1 className="text-center m-5">SkinCare</h1>
+          <Row>
+            {SKIN_CARE_PRODUCT && SKIN_CARE_PRODUCT.map((value, index) => {
+                return (
+                  <>
+                    <Col>
+                      <Card style={{ width: '16rem' }} key={`card-${index}`}>
+                        <Card.Img variant="top" src={value.productImage} />
+                        <Card.Body>
+                          <Card.Text className='text-center'>{value.productTitle}</Card.Text>
+                          <Button variant="outline-info" style={{ width: '100%' }} onClick={() => handleShow(value)}>
+                            Quick View
+                          </Button>
+                        </Card.Body>
+                      </Card>
+                    </Col>
+                  </>
+                );
+              })}
+          </Row>
+        </Container>
+      </section>
 
       <Modal
         show={show}
@@ -111,37 +63,34 @@ const SkinCare = () => {
         <Modal.Body>
           <Container>
             <Row>
-              <Col md={6} sm={12}>
-                {modalData &&
-                  modalData?.modalImages?.map((image, index) => {
+              <Col md={5} xs={10}>
+                <Swiper
+                  grabCursor={true}
+                  pagination={true}
+                  navigation={true}
+                  loop={true}
+                  modules={[EffectFlip, Pagination, Navigation]}
+                  className="mySwiper"
+                >
+                  {modalData && modalData?.modalImages?.map((image, index) => {
                     return (
-                      <Image
-                        src={image.src}
-                        key={image.id}
-                        alt=""
-                        className="img-fluid"
-                        width={150}
-                        onClick={(e) =>
-                          setModalImages({ src: image.src, id: index })
-                        }
-                        height={150}
-                      />
-                    );
+                      <>
+                        <SwiperSlide>
+                          <img
+                            className="img-fluid"
+                            // width={400}
+                            // height={150}
+                            src={image?.src} />
+                        </SwiperSlide>
+                      </>
+                    )
                   })}
-                <Col md={12} sm={12}>
-                  <Image
-                    src={modalImages?.src}
-                    key={modalImages?.id}
-                    alt=""
-                    className="img-fluid"
-                    width={300}
-                    height={150}
-                  />
-                </Col>
-              </Col>
-              <Col md={6} sm={12}>
+                </Swiper>
+              </Col >
+
+              <Col md={7} xs={12}>
                 <div className="moddal-content">
-                  <h3>{modalData.modalTitle}</h3>
+                  {/* <h3>{modalData.modalTitle}</h3> */}
                   <p>{modalData.modalText}</p>
                   <p>{modalData.modalQuantity}</p>
                 </div>
@@ -157,6 +106,6 @@ const SkinCare = () => {
       </Modal>
     </>
   );
-};
-
-export default SkinCare;
+}
+ 
+export default SkinCare 

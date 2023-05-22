@@ -12,12 +12,12 @@ const ProductMarket = () => {
                 <Container>
                     <div className="product-market-heading">
                         <h2>Our Product Markets</h2>
-                        <p>As one of the largest FMCG companies operating in Kuwait and across the world, Crown International (CI) has approx 15 brands spanning 10 distinct categories such as soaps, shampoos, skin care, detergents, toothpaste, cosmetics, deodorants etc. These brands are a part of life in many households in Kuwait.</p>
+                        <p>As one of the largest FMCG companies operating in Kuwait and across the world, Crown Worldwide Group (CWG) has approx 15 brands spanning 10 distinct categories such as soaps, shampoos, skin care, detergents, toothpaste, cosmetics, deodorants etc. These brands are a part of life in many households in Kuwait.</p>
                     </div>
                     <Swiper
                         // install Swiper modules
                         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-                        spaceBetween={20}
+                        spaceBetween={40}
                         slidesPerView={5}
                         // navigation
                         // pagination={{ clickable: true }}
@@ -26,18 +26,13 @@ const ProductMarket = () => {
                         onSlideChange={() => console.log('slide change')}
                         loop={true}
                         breakpoints={{
-                            // when window width is >= 640px
-                            640: {
-                                width: 640,
-                                slidesPerView: 1,
-                            },
-                            // when window width is >= 768px
+                            // // when window width is >= 768px
                             768: {
                                 width: 768,
-                                slidesPerView: 2,
+                                slidesPerView: 4,
                             },
                             320: {
-                                width: 320,
+                                width: 220,
                                 slidesPerView: 1
                             }
                         }}
@@ -45,57 +40,72 @@ const ProductMarket = () => {
                             delay: 1000,
                             disableOnInteraction: false,
                         }}
-                       
+
                     >
                         <SwiperSlide>
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="/images/product-image1.jpg" />
-                            </Card>
+                            <div className="product-market-image-container">
+                                <img src="/images/website-data/market-logos/al-hakimi.webp" className='product-market-slider-image' alt="" />
+                            </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="/images/product-image1.jpg" />
-                            </Card>
+                            <div className="product-market-image-container">
+                                <img src="/images/website-data/market-logos/big-c.webp" className='product-market-slider-image' alt="" />
+                            </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="/images/product-image1.jpg" />
-                            </Card>
+                            <div className="product-market-image-container">
+                                <img src="/images/website-data/market-logos/city-centre.webp" className='product-market-slider-image' alt="" />
+                            </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="/images/product-image1.jpg" />
-                            </Card>
+                            <div className="product-market-image-container">
+                                <img src="/images/website-data/market-logos/grand.webp" className='product-market-slider-image' alt="" />
+                            </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="/images/product-image1.jpg" />
-                            </Card>
+                            <div className="product-market-image-container">
+                                <img src="/images/website-data/market-logos/holiday-inn.webp" className='product-market-slider-image' alt="" />
+                            </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="/images/product-image1.jpg" />
-                            </Card>
+                            <div className="product-market-image-container">
+                                <img src="/images/website-data/market-logos/india-gate.webp" className='product-market-slider-image' alt="" />
+                            </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="/images/product-image1.jpg" />
-                            </Card>
+                            <div className="product-market-image-container">
+                                <img src="/images/website-data/market-logos/kabayan.webp" className='product-market-slider-image' alt="" />
+                            </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="/images/product-image1.jpg" />
-                            </Card>
+                            <div className="product-market-image-container">
+                                <img src="/images/website-data/market-logos/lo-cost.webp" className='product-market-slider-image' alt="" />
+                            </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="/images/product-image1.jpg" />
-                            </Card>
+                        <div className="product-market-image-container">
+                                <img src="/images/website-data/market-logos/mango.webp" className='product-market-slider-image' alt="" />
+                            </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <Card style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="/images/product-image1.jpg" />
-                            </Card>
+                        <div className="product-market-image-container">
+                                <img src="/images/website-data/market-logos/meem-market.webp" className='product-market-slider-image' alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <div className="product-market-image-container">
+                                <img src="/images/website-data/market-logos/mrg.webp" className='product-market-slider-image' alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <div className="product-market-image-container">
+                                <img src="/images/website-data/market-logos/on-cost.webp" className='product-market-slider-image' alt="" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                        <div className="product-market-image-container">
+                                <img src="/images/website-data/market-logos/ramez.webp" className='product-market-slider-image' alt="" />
+                            </div>
                         </SwiperSlide>
                     </Swiper>
                 </Container>

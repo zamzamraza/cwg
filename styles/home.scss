@@ -4,7 +4,7 @@
   height: 500px;
   background-position: center;
   background-size: cover;
-  background-image: url("../public/images/kuwait-bg.png");
+  background-image: url("../public/images/website-data/about-us-webp.webp");
   background-attachment: fixed;
 
   color: white;
@@ -13,6 +13,12 @@
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+
+
 
 // our products category
 .our-products {
@@ -40,6 +46,55 @@
   }
 }
 
+.box:hover {
+    // color: white;
+
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: #59c0e994;
+}
+
+.box:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 87%;
+  left: 20%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.box {
+  position: relative;
+}
+
+
+
+
+
+
 // product market
 .product-market {
   margin-bottom: 70px;
@@ -51,6 +106,15 @@
 .product-market-heading {
   text-align: center;
   padding: 50px;
+}
+
+.product-market-image-container {
+  border: 1px solid black;
+  text-align: center;
+  display: inline-block;
+}
+.product-market-slider-image {
+   width: 12rem;
 }
 
 // product slider
@@ -78,10 +142,17 @@
     }
   }
   .our-brand-content {
-    background-color: #fcbf49;
+    background-color: #59c0e9;
     padding-bottom: 10px;
+    color: white;
     p{
      padding: 15px;
     }
   }
 }
+@media only screen and (min-width: 150px) and (max-width: 550px) {
+  .our-brands {
+    width: 95%;
+  }
+}
+

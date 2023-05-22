@@ -1,20 +1,23 @@
 // banner
-.banner {
-  background-image: url(../public/images/about-header.png);
-  height: 400px;
-  background-position: center;
-  background-size: cover;
-}
-@media only screen and (min-width: 150px) and (max-width: 550px) {
-  .banner {
-    height: 200px;
-  }
-}
+// .banner {
+//   background-image: url(../public/images/about-header.png);
+//   height: 400px;
+//   background-position: center;
+//   background-size: cover;
+// }
+// @media only screen and (min-width: 150px) and (max-width: 550px) {
+//   .banner {
+//     height: 200px;
+//   }
+// }
 
 // about quality section
 .about-section {
-  background-image: url(../public/images/about-bg2.png);
+  background-image: url(../public/images/website-data/about-us-webp.webp);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 .about-heading {
   padding-top: 30px;
@@ -94,7 +97,7 @@
   }
   span {
     padding-left: 5px;
-    color: #fcbf49;
+    color: #59c0e9;
   }
   p{
     font-family: var(--primary_font_family);

@@ -1,8 +1,9 @@
 .footer-div-wrapper {
-  background-image: url(../public/images/footer-bg.jpg);
+  background-image: url(../public/images/footer.jpg);
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-position: bottom;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   // background-color: #59c0e9;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -16,11 +17,25 @@
     padding-top: 30px;
     text-align: left;
   }
-  ul li {
+  ul li {  
     list-style-type: none;
   }
   a {
     display: block;
     cursor: pointer;
+  }
+}
+
+.svg-icons-container {
+  display: flex;
+  justify-content:space-between;
+  width: 220px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 550px) {
+  .footer-div-wrapper {
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

@@ -10,22 +10,15 @@ const TopNav = () => {
         <div className="container topnav">
           <div className="contact">
             <a href="mailto:info@crownintl-kwt.com">
-              <span style={{ marginRight: '5px' }}>
-                <FontAwesomeIcon icon={faEnvelope} />
-              </span>
-              info@crownintl-kwt.com</a>
-            <span>
-              <span>
-                <FontAwesomeIcon icon={faPhone} />
-              </span>
-              +96551052112</span>
+              <span><FontAwesomeIcon icon={faEnvelope} /> info@crownintl-kwt.com</span></a>
+             <a href="tel:+96551052112"> <span><FontAwesomeIcon icon={faPhone} /> +96551052112</span></a>
           </div>
           <div className="address">
             <p>
               <span style={{ paddingRight: '5px' }}>
                 <FontAwesomeIcon icon={faLocationDot} />
               </span>
-              Alhamra Mall, Office No. 805, 8th Floor, Farwaniya,Kuwait.
+              Alhamra Mall, Office No. 311, 3rd Floor, Farwaniya,Kuwait.
             </p>
           </div>
         </div>

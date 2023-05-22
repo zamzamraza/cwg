@@ -24,30 +24,34 @@ const OurBrands = () => {
                 >
                     <SwiperSlide>
                         <div className="our-brand-img">
-                            <img src="/images/banner-image5.jpg" alt="" className='img-fluid' />
+                            <img src="/images/website-data/our-brands-banners/crownsessentials.webp" alt="" className='img-fluid' />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="our-brand-img">
-                            <img src="/images/banner-image5.jpg" alt="" className='img-fluid' />
+                            <img src="/images/website-data/our-brands-banners/kingtox.webp" alt="" className='img-fluid' />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="our-brand-img">
-                            <img src="/images/banner-image5.jpg" alt="" className='img-fluid' />
+                            <img src="/images/website-data/our-brands-banners/lotus.webp" alt="" className='img-fluid' />
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
-                    <SwiperSlide>Slide 5</SwiperSlide>
-                    <SwiperSlide>Slide 6</SwiperSlide>
-                    <SwiperSlide>Slide 7</SwiperSlide>
-                    <SwiperSlide>Slide 8</SwiperSlide>
-                    <SwiperSlide>Slide 9</SwiperSlide>
+                    <SwiperSlide>
+                        <div className="our-brand-img">
+                            <img src="/images/website-data/our-brands-banners/moksh.webp" alt="" className='img-fluid' />
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="our-brand-img">
+                            <img src="/images/website-data/our-brands-banners/tulip.webp" alt="" className='img-fluid' />
+                        </div>
+                    </SwiperSlide>
                 </Swiper>
                 <div className="our-brand-content text-center">
                     <p>
-                        We offer a variety of products under multiple brands to all customers. Crown International is an ISO and OHSAS certified company. We stand for high quality products, Professional management and ethical business practices.We are currently having a well-resourced team and marketing professionals of high caliber who are customer centric and result oriented. Thus we empower our customers and partners to capitalize on opportunities in our region.</p>
-                        <Button variant="outline-dark">See All Products</Button>
+                        We offer a variety of products under multiple brands to all customers. Crown Worldwide Group is an ISO and OHSAS certified company. We stand for high quality products, Professional management and ethical business practices.We are currently having a well-resourced team and marketing professionals of high caliber who are customer centric and result oriented. Thus we empower our customers and partners to capitalize on opportunities in our region.</p>
+                    <Button variant="outline-dark">See All Products</Button>
                 </div>
             </section>
         </>

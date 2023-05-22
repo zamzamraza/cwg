@@ -5,24 +5,53 @@ const HomeCarousel = () => {
     return (
         <>
             <Carousel>
+            <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="/images/coming-soon-banner.webp"
+                        alt="Third slide"
+                    />
+                </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/images/banner-image5.jpg"
+                        src="/images/website-data/upper-banners/banner- sample.webp"
                         alt="First slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/images/banner-image5.jpg"
+                        src="/images/website-data/upper-banners/crownsessential.webp"
+
                         alt="Second slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/images/banner-image5.jpg"
+                        src="/images/website-data/upper-banners/kingtox.webp"
+                        alt="Third slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="/images/website-data/upper-banners/moksh.webp"
+                        alt="Third slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="/images/website-data/upper-banners/tulip.webp"
+                        alt="Third slide"
+                    />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="/images/website-data/upper-banners/lotus.webp"
                         alt="Third slide"
                     />
                 </Carousel.Item>

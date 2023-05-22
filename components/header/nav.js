@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head';
-import Image from 'next/image';
 import { Button, Col, Row } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -9,15 +8,13 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Link from 'next/link';
 
 
-
+  
 const HeaderNavbar = () => {
   return (
     <>
-
-
       <Navbar bg="light" expand="lg">
         <Navbar.Brand>
-          <Link href='/'> <Image src='/images/cwg-logo.png' width={300} height={70} alt='logo' /></Link> 
+          <Link href='/'> <img src='/images/cwg-logo.png' width={300} height={70} alt='logo' /></Link> 
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -50,10 +47,9 @@ const HeaderNavbar = () => {
             <Nav.Item><Link href='/our-divisions'>Our Divisions</Link></Nav.Item>
             <Nav.Item><Link href='/contact-us'>Contact us</Link></Nav.Item>
             <Nav.Item className='d-broshure'>
-              <span> Download Brochure </span>
+              <span> <a href="/Updated_Brochure_Crown.pdf" download> Download Brochure </a></span>
             </Nav.Item>
           </Nav>
-
         </Navbar.Collapse>
       </Navbar>
     </>

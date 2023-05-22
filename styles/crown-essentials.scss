@@ -87,13 +87,32 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   // opacity: 16.4;
 }
 .about-essentials {
   padding-top: 100px;
   color: white;
+  text-align: center;
+  h3 {
+    font-size: 35px;
+  }
 }
-
+@media only screen and (min-width: 150px) and (max-width: 550px) {
+  .sec-3 {
+    height: auto;
+  }
+  .about-essentials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    h3 {
+      font-size: 25px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+}
 // sec 4
 .sec-4 {
   margin-top: 25px;
@@ -107,7 +126,7 @@
     justify-content: center;
   }
   .sec-4-content {
-    width: 500px;
+    
     .sec-4-content img {
       box-sizing: border-box;
       transition-duration: 1s;
@@ -125,7 +144,9 @@
     }
   }
 }
-
+@media only screen and (min-width: 150px) and (max-width: 550px) {
+  
+}
 // sec 5
 
 .sec-5 {
@@ -141,7 +162,6 @@
   .sec-5-content {
     display: flex;
     background-color: white;
-    margin-top: 90px;
     margin-bottom: 120px;
     margin-top: 120px;
     padding: 40px 25px 20px 25px;
@@ -158,5 +178,13 @@
     p {
       padding-top: 10px;
     }
+  }
+}
+@media only screen and (min-width: 150px) and (max-width: 550px) {
+  .sec-5-content {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }

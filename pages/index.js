@@ -1,5 +1,4 @@
 import React from 'react'
-
 import HomeCarousel from '@/components/home/home-carousel';
 import FixedImageSection from '@/components/home/fixed-image-section';
 import ProductCtegory from '@/components/home/product-category';
@@ -14,7 +13,7 @@ const Home = () => {
       <FixedImageSection />
       <ProductCtegory />
       <ProductMarket />
-      <ProductSlider />
+      {/* <ProductSlider /> */}
       <OurBrands />
     </>
   )
