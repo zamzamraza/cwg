@@ -24,8 +24,10 @@ const PestControl = () => {
   return (
     <>
       <section className='product-container'>
+      <div>
+            <img src="/images/our-prods-banner/pest.jpg" alt="about-us" className='img-fluid mb-5' />
+      </div>
         <Container>
-          <h1 className="text-center m-5">Cosmetics</h1>
           <Row>
             {PEST_CONTROL_DATA && PEST_CONTROL_DATA.map((value, index) => {
                 return (

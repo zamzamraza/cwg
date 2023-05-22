@@ -24,8 +24,10 @@ const HairCare = () => {
   return (
     <>
       <section className='product-container'>
+      <div>
+            <img src="/images/our-prods-banner/hair.jpg" alt="about-us" className='img-fluid mb-5' />
+      </div>
         <Container>
-          <h1 className="text-center m-5">Cosmetics</h1>
           <Row>
             {HAIR_CARE_DATA && HAIR_CARE_DATA.map((value, index) => {
                 return (

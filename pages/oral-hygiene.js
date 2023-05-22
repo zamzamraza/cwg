@@ -24,8 +24,10 @@ const OralHygiene = () => {
   return (
     <>
       <section className='product-container'>
+      <div>
+            <img src="/images/our-prods-banner/oral.jpg" alt="about-us" className='img-fluid mb-5' />
+      </div>
         <Container>
-          <h1 className="text-center m-5">Cosmetics</h1>
           <Row>
             {ORAL_HYGIENE_DATA && ORAL_HYGIENE_DATA.map((value, index) => {
                 return (

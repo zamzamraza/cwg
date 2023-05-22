@@ -24,8 +24,10 @@ const IncenseSticks = () => {
   return (
     <>
       <section className='product-container'>
+      <div>
+            <img src="/images/our-prods-banner/incense.jpg" alt="about-us" className='img-fluid mb-5' />
+      </div>
         <Container>
-          <h1 className="text-center m-5">Incense Sticks</h1>
           <Row>
             {INCENSE_STICKS_DATA && INCENSE_STICKS_DATA.map((value, index) => {
                 return (

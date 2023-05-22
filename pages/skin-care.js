@@ -24,8 +24,10 @@ const SkinCare = () => {
   return (
     <>
       <section className='product-container'>
+      <div>
+            <img src="/images/our-prods-banner/skin.jpg" alt="about-us" className='img-fluid mb-5' />
+      </div>
         <Container>
-          <h1 className="text-center m-5">SkinCare</h1>
           <Row>
             {SKIN_CARE_PRODUCT && SKIN_CARE_PRODUCT.map((value, index) => {
                 return (

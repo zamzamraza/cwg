@@ -124,8 +124,10 @@ const SkinCare = () => {
   return (
     <>
        <section className='product-container'>
+       <div>
+            <img src="/images/our-prods-banner/household.jpg" alt="about-us" className='img-fluid mb-5' />
+      </div>
       <Container>
-        <h1 className='text-center m-5'>Skin Care Products</h1>
         <Row>
           {data && data.map((value, index) => {
             return (

@@ -23,8 +23,10 @@ const AdhesiveMeterial = () => {
   return (
     <>
       <section className='product-container'>
+      <div>
+            <img src="/images/our-prods-banner/adhesive.jpg" alt="about-us" className='img-fluid mb-5' />
+      </div>
         <Container>
-          <h1 className="text-center m-5">Adhesive Material</h1>
           <Row>
             {ADHESIVE_DATA && ADHESIVE_DATA.map((value, index) => {
                 return (

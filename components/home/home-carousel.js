@@ -8,7 +8,7 @@ const HomeCarousel = () => {
             <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="/images/coming-soon-banner.webp"
+                        src="/images/talabatbanner.webp"
                         alt="Third slide"
                     />
                 </Carousel.Item>
