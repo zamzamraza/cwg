@@ -3,7 +3,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Modal from "react-bootstrap/Modal";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { EffectFlip, Pagination, Navigation } from "swiper";
